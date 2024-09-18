@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="content-section">
+<div id="home" class="page active">
+    <div class="home-background">
+      <div class="home-content">
+        <h1 class="home-title">Basiru Issa</h1>
+        <p class="home-subtitle">Full Stack Developer</p>
+        <a href="#" class="learn-more-btn" data-page="about">Learn More</a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+ <!-- About Section -->
+<section id="about" class="content-section" style="display: none;">
+    <div id="about" class="page">
+        <h2 class="about-title">About Me</h2>
+      <div class="container-about">
+        <div class="about-flex-container">
+
+          <div class="about-image">
+            <img src="./modern5.jpeg" alt="John Doe">
+          </div>
+
+          <div class="about-text">
+            <p>Hello! I'm John Doe, a passionate Full Stack Developer with 5 years of experience in creating robust and scalable web applications. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+            <p>My expertise includes front-end technologies like React and Vue.js, as well as back-end technologies such as Node.js and Python. I'm always eager to learn new technologies and improve my skills.</p>
+            <p>When I'm not coding, you can find me hiking in the mountains or experimenting with new recipes in the kitchen.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="content-section" style="display: none;">
+    <div id="skills" class="page">
+        <h2 class="section-title">My Skills</h2>
+        <div class="container">
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3 class="category-title">Front-end</h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">HTML/CSS</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">React</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">Back-end</h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="content-section" style="display: none;">
+    <div id="experience" class="page">
+        <div class="container">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="experience-list">
+            <div class="experience-item">
+              <h3 class="job-title">Senior Full Stack Developer</h3>
+              <p class="job-company">TechCorp Inc. | 2019 - Present</p>
+              <ul class="job-responsibilities">
+                <li>Led a team of 5 developers in building a scalable e-commerce platform</li>
+                <li>Implemented RESTful APIs using Node.js and Express</li>
+                <li>Optimized database queries, resulting in a 30% improvement in application performance</li>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <h3 class="job-title">Full Stack Developer</h3>
+              <p class="job-company">WebSolutions Co. | 2016 - 2019</p>
+              <ul class="job-responsibilities">
+                <li>Developed and maintained multiple client websites using React and Node.js</li>
+                <li>Collaborated with UX designers to implement responsive designs</li>
+                <li>Integrated third-party APIs and services to enhance website functionality</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="content-section" style="display: none;">
+    <div id="projects" class="page">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <img src="https://via.placeholder.com/300x200" alt="E-commerce Platform" class="project-image">
+              <div class="project-content">
+                <h3 class="project-title">E-commerce Platform</h3>
+                <p class="project-description">A full-featured e-commerce platform built with React, Node.js, and MongoDB.</p>
+                <a href="https://github.com/johndoe/ecommerce-platform" class="project-link">View Project</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="https://via.placeholder.com/300x200" alt="Task Management App" class="project-image">
+              <div class="project-content">
+                <h3 class="project-title">Task Management App</h3>
+                <p class="project-description">A collaborative task management application using Vue.js and Firebase.</p>
+                <a href="https://github.com/johndoe/task-manager" class="project-link">View Project</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="https://via.placeholder.com/300x200" alt="Weather Forecast App" class="project-image">
+              <div class="project-content">
+                <h3 class="project-title">Weather Forecast App</h3>
+                <p class="project-description">A weather forecast application built with React Native and OpenWeatherMap API.</p>
+                <a href="https://github.com/johndoe/weather-app" class="project-link">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="content-section" style="display: none;">
+<div id="contact" class="page">
+    <div class="contact-container">
+      <h2 class="contact-title">Get In Touch</h2>
+      <div class="contact-form-wrapper">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" rows="4" required class="form-input"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+      <div class="connect-section">
+        <h3 class="connect-title">Connect With Me</h3>
+        <div class="social-links">
+          <a href="https://github.com/johndoe" class="social-link"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://linkedin.com/in/johndoe" class="social-link"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://twitter.com/johndoe" class="social-link"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </section>
+
+</body>
+</html>
