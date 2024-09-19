@@ -2,75 +2,84 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 60px; /* Ensure the body content doesn't overlap with the fixed header */
     background-color: #f4f4f4;
-  }
-  
-  header {
+}
+
+/* Fixed Header */
+header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-  }
-  
-  header nav ul {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header stays on top */
+}
+
+header nav ul {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
-  }
-  
-  header nav ul li {
+    padding: 0;
+}
+
+header nav ul li {
     margin: 0 15px;
-  }
-  
-  header nav ul li a {
+}
+
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  header nav ul li a:hover {
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
     color: #f4b400;
-  }
-  
-  section {
+}
+
+/* Page Section */
+section {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Animations */
-  .fade-in {
+}
+
+/* Animations */
+.fade-in {
     animation: fadeIn 2s ease-in-out;
-  }
-  
-  .slide-up {
+}
+
+.slide-up {
     animation: slideUp 1.5s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @keyframes slideUp {
+}
+
+@keyframes slideUp {
     from {
-      transform: translateY(100%);
+        transform: translateY(100%);
     }
     to {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
-  
-  /* Button Styles */
-  .btn-animated {
+}
+
+/* Button Styles */
+.btn-animated {
     display: inline-block;
     padding: 15px 30px;
     background-color: #333;
@@ -78,26 +87,13 @@ body {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  .btn-animated:hover {
+}
+
+.btn-animated:hover {
     background-color: #f4b400;
-  }
-  
+}
 
-  
-  
-
-
-
-
-
-
-
-
-
-
-  /* General Styles */
+/* Skills Section */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -114,7 +110,7 @@ body {
 
 .skills-grid {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -123,8 +119,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 40px); /* Adjusts width for three columns by default */
-    min-width: 200px; /* Ensures that the section doesn't get too small */
+    flex: 1 1 calc(33.333% - 40px);
+    min-width: 200px;
 }
 
 .skill-section h3 {
@@ -167,7 +163,7 @@ body {
     }
 
     .skill-section {
-        flex: 1 1 calc(50% - 30px); /* Adjusts width for two columns on tablets */
+        flex: 1 1 calc(50% - 30px);
     }
 }
 
@@ -181,6 +177,7 @@ body {
     }
 
     .skill-section {
-        flex: 1 1 100%; /* Stacks sections vertically on mobile screens */
+        flex: 1 1 100%;
     }
 }
+
