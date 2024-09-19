@@ -114,17 +114,17 @@ body {
 
 .skills-grid {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
-    gap: 40px;
+    flex-wrap: wrap; 
+    gap: 10px;
 }
 
 .skill-section {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33.333% - 40px); /* Adjusts width for three columns by default */
-    min-width: 300px; /* Ensures that the section doesn't get too small */
+    min-width: 200px; /* Ensures that the section doesn't get too small */
 }
 
 .skill-section h3 {
