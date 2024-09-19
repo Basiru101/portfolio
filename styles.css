@@ -5,7 +5,15 @@ body {
     padding-top: 60px; /* Ensure the body content doesn't overlap with the fixed header */
     background-color: #f4f4f4;
 }
+#header{
+    background-image: url(./modern5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 
+
+}
 /* Fixed Header */
 header {
     background-color: #333;
