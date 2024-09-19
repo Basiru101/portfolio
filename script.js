@@ -9,4 +9,6 @@ document.querySelectorAll('a[data-page]').forEach(link => {
       document.getElementById(targetPage).classList.add('active');
     });
   });
+
   
+ 

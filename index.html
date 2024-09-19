@@ -23,9 +23,38 @@
   <section id="home">
     <div class="intro">
       <h1 class="fade-in">Welcome to My Portfolio</h1>
-      <p class="slide-up">I am a passionate web developer.</p>
+      <p class="slide-up"></p> 
       <a href="projects.html" class="btn-animated">View My Work</a>
     </div>
   </section>
+
+  <script>
+    // Typewriter effect function
+    const text = "I am a passionate web developer.";
+    let i = 0;
+    const speed = 100; 
+    const delayBetweenLoops = 2000;
+    
+    function typeWriter() {
+      const typewriterElement = document.querySelector(".slide-up");
+      
+      if (i < text.length) {
+        typewriterElement.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      } else {
+        setTimeout(() => {
+          typewriterElement.innerHTML = ''; 
+          i = 0; 
+          typeWriter(); 
+        }, delayBetweenLoops);
+      }
+    }
+    
+    window.onload = function() {
+      typeWriter();
+    }
+    </script>
+    
 </body>
 </html>
