@@ -20,7 +20,7 @@ header {
 
 header nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
